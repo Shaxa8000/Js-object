@@ -112,6 +112,131 @@
 // console.log(UserOne, userTwo) => Again the same two objects
 
 
+//<<< OBJECT DESTRUCTURING>>>
+
+// const personOne = {
+//     name: 'shaxa',
+//     age: 25,
+//     address: {
+//         city: 'Somewhere else',
+//         state: 'one of them'
+//     }
+// }
+
+// const personTwo = {
+//     name: "Sally",
+//     age: 32,
+//     address: {
+//         city: 'Somewhere else',
+//         state: 'Another one of them'
+//     }
+// }
+
+// const { name, age } = personTwo;
+
+// console.log(name); => Sally
+// console.log(age); => 32
+
+
+
+// const { name: firstName, age } = personTwo;
+
+// console.log(firstName) => Sally 
+
+
+// const { name: firstName, age, favouriteFood = 'Rice' } = personTwo;
+
+// console.log(favouriteFood) => Rice
+
+
+// const { name: firstName, ...rest } = personTwo;
+
+// console.log(rest); => Bu holatda nameni consolga chiqarmaydi objectni bowqa elementlarini consolga chiqaradi
+
+
+//<<< Destructuring nested objects>>>
+
+
+// const { name: firstName, address: { city } } = personTwo;
+
+// console.log(city) => somewhere else;
+
+
+//<< COMBINING TWO OBJECTS>>
+
+// const personOne = {
+    // name: 'shaxa',
+    // age: 25,
+    // address: {
+        // city: 'Somewhere else',
+        // state: 'one of them'
+    // }
+// }
+
+
+
+// const personTwo = {
+//   age: 32,
+//   favouriteFood: 'Watermelon'
+// };
+
+// const personThree = { ...personOne, ...personTwo }
+
+// console.log(personThree) => Bu holatda ikta age key lar bulgani uchun ikkinchi key dagi value ni yani 32 ni birinchi keyga uzlashtirib console ga chiqaradi.Qolgan xamma narsa uz xolicha.
+
+
+//<<< FUNCTION >>
+
+// const personTwo = {
+//   name: 'Sally',
+//   age: 32,
+//   address: {
+//     city: 'Somewhere else',
+//     state: 'Another one of them',
+//   },
+// };
+
+
+// function printUser(user) {
+//     console.log(`name is: ${user.name}, age is: ${user.age}`)
+// }
+
+// printUser(personTwo); => name is: Sally, age is: 32.
+
+
+//<<Destructuring above function>>
+
+// const personTwo = {
+//   name: 'Sally',
+//   age: 32,
+//   address: {
+//     city: 'Somewhere else',
+//     state: 'Another one of them',
+//   },
+// };
+
+// function printUser({name, age}) {
+//   console.log(`name is: ${name}, age is: ${age}`);
+// }
+
+// printUser(personTwo); => exact same result as above.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
