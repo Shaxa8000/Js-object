@@ -222,6 +222,21 @@
 // printUser(personTwo); => exact same result as above.
 
 
+//<<<< OBJECT METHODS>>>
+
+// user = {
+//     name: "shaxa",
+//     surname: 'yaxyayev',
+//     id: 18,
+//     number: 123456789,
+//     fullname: function () {
+//         console.log(this.name + ' ' + this.surname)
+//     }
+// }
+
+// user.fullname(); => shaxa yaxyayev
+
+
 
 
 
